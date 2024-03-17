@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.index-logo{
+    margin: 30px;
+    display: flex;
+}
+
+.index-text{
+    border: none;
+    border-bottom: 3px solid #ccc;
+    width: 150px;
+    display: none;
+}
