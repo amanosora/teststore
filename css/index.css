@@ -56,8 +56,16 @@ body {
 
 .index-nav {
     float: left;
-    margin: 30px 0 0 0;
+    margin: 0px 0px 0px 30px;
 }
+
+.index-nav a {
+    display: block; 
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
 
 .index-banner {
     position: fixed;
@@ -71,18 +79,29 @@ body {
 .index-banner > img {
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .index-new {
-    position: absolute;
-    bottom: 20px; /* 距離底部的距離 */
+    position: relative;
+    top: 750px; 
     width: 100%;
-    text-align: center; /* 將內容置中 */
+    text-align: center; 
 }
 
-.index-new .index-pnew {
-    border-bottom: 2px black solid;
+.index-p {
+    border: 2px solid black;
     width: 20%;
-    position: relative;
-    display: inline-block; /* 讓 "new" 文字成為行內元素，以便置中 */
+    margin: auto;
+    text-align: center; 
 }
+
+.index-pnew {
+    font-size: large;
+    display: block; /* 將元素轉換為區塊級元素 */
+    margin: 0 auto; /* 水平置中 */
+    width: fit-content; /* 讓寬度符合內容的大小 */
+    padding: 10px;
+}
+
+
