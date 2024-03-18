@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.index-nav {
+    float: left;
+    margin: 30px 0 0 0;
+}
+
+.index-banner {
+    position: fixed;
+	width: 80%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 30px 0px 30px 0px;
+}
+
+.index-banner > img {
+    width: 100%;
+    height: auto;
+}
+
+.index-new {
+    position: absolute;
+    bottom: 20px; /* 距離底部的距離 */
+    width: 100%;
+    text-align: center; /* 將內容置中 */
+}
+
+.index-new .index-pnew {
+    border-bottom: 2px black solid;
+    width: 20%;
+    position: relative;
+    display: inline-block; /* 讓 "new" 文字成為行內元素，以便置中 */
+}
