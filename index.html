@@ -5,47 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cart.css">
 </head>
 <body>
-    <div>
-        <header class="index-header">
-            <div class="index-logo">
-                <a href="/"><img src="./img/logo.png" alt="logo"></a>
-            </div>
-            <div class="index-user">
-                <div class="index-search">
-                    <input type="text" class="index-text">
-                    <button onclick="inedxsearch()" id="indexsearch"><img src="./img/Search.png" alt="搜尋" width="30px"></button>
-                </div>
-                <a href="/login" class="index-login"><img src="./img/Customer.png" alt="會員" width="30px"></a>
-                <a href="/cart" class="index-cart"><img src="./img/Shopping Cart.png" alt="購物車" width="30px"></a>
-            </div>
-        </header>
 
-        <nav class="index-nav">
-            <a href="#">NEW</a>
-            <br>
-            <a href="#">BEST</a>
-            <br>
-            <a href="#">SALE</a>
-            <br>
-            <a href="#">ABOUT</a>
-        </nav>
+    <header class="index-header">
+        <div class="index-logo">
+            <a href="/"><img src="./img/logo.png" alt="logo"></a>
+        </div>
+        <div class="index-user">
+            <div class="index-search">
+                <input type="text" class="index-text">
+                <button onclick="inedxsearch()" id="indexsearch"><img src="./img/Search.png" alt="搜尋" width="30px"></button>
+            </div>
+            <a href="/login" class="index-login"><img src="./img/Customer.png" alt="會員" width="30px"></a>
+            <a href="/cart" class="index-cart"><img src="./img/Shopping Cart.png" alt="購物車" width="30px"></a>
+        </div>
+    </header>
+
+
+    <nav class="index-nav">
+        <ul class="index-navBar">
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </nav>
     
-        <div class=index-banner>
+    <div class=index-banner>
         <img src="./img/cartimg/1.png" alt="banner">
     </div>
     
     
-        <div class="index-new">
-            <p class="index-p"></p>
-            <p class="index-pnew">new</p>
-            <p class="index-p"></p>
-        </div>
+    <div class="index-new">
+        <p class="index-pnew">new</p>
+    </div>
     
     <div class="index-product">
-    
-    </div>
+   <!-- 資料在js -->
     </div>
     <script src="./js/index.js"></script>
 </body>

@@ -1,18 +1,24 @@
 const products = [
     {
-        img: "img/cartimg/kaboompics_anonymous-female-in-trendy-outfit-with-bag-27773.jpg",
-        name: "BAG",
+        img: "images/product_images/product_image1.jpg",
+        name: "海底撈【自煮火鍋（麻辣嫩牛/番茄牛肉）】",
+        discount: 6.3,
+        originPrice: 300,
         discountPrice: 189
     },
     {
-        img: "img/cartimg/kaboompics_anonymous-female-in-trendy-outfit-with-bag-27773.jpg",
-        name: "BAG",
-        discountPrice: 189
+        img: "images/product_images/product_image2.jpg",
+        name: "桂格無糖養氣人蔘盒裝19瓶",
+        discount: null,
+        originPrice: null,
+        discountPrice: 989
     },
-     {
-        img: "img/cartimg/kaboompics_anonymous-female-in-trendy-outfit-with-bag-27773.jpg",
-        name: "BAG",
-        discountPrice: 189
+    {
+        img: "images/product_images/product_image3.jpg",
+        name: "平面伯爵茶醫療口罩口罩 台灣製造 雙鋼印 醫療口罩 MIT 成人口罩( 現貨供應)",
+        discount: 4.9,
+        originPrice: 100,
+        discountPrice: 49
     }
 ];
 
@@ -24,6 +30,7 @@ for (let i=0; i<products.length; i++) {
             <a href="product.html">
                 <div class="product-image-row">
                     <img class="product-image" src="${products[i].img}">
+                    <p class="product-discount">${products[i].discount}折</p>
                 </div>
                 <div class="product-information">
                     <div class="product-text">
@@ -46,5 +53,5 @@ for (let i=0; i<products.length; i++) {
     `;
 }
 
-document.querySelector(".index-product").innerHTML = html;
+document.querySelector(".product-grid").innerHTML = html;
 
