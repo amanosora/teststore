@@ -1,17 +1,17 @@
 const products = [
     {
-        img: "img/cartimg/kaboompics_anonymous-female-in-trendy-outfit-with-bag-27773.jpg",
-        name: "BAG",
+        img: "img/cartimg/kaboompics_candle-in-white-glass-with-label-on-linen-couch-27078.jpg",
+        name: "蠟燭",
         discountPrice: 189
     },
     {
-        img: "img/cartimg/kaboompics_anonymous-female-in-trendy-outfit-with-bag-27773.jpg",
-        name: "BAG",
+        img: "img/cartimg/kaboompics_candle-in-white-glass-with-label-on-linen-couch-27078.jpg",
+        name: "蠟燭",
         discountPrice: 189
     },
      {
-        img: "img/cartimg/kaboompics_anonymous-female-in-trendy-outfit-with-bag-27773.jpg",
-        name: "BAG",
+        img: "img/cartimg/kaboompics_candle-in-white-glass-with-label-on-linen-couch-27078.jpg",
+        name: "蠟燭",
         discountPrice: 189
     }
 ];
@@ -20,29 +20,15 @@ const products = [
 let html = "";
 for (let i=0; i<products.length; i++) {
     html += `
-        <div class="product-block">
-            <a href="product.html">
-                <div class="product-image-row">
-                    <img class="product-image" src="${products[i].img}">
-                </div>
-                <div class="product-information">
-                    <div class="product-text">
-                        <p class="product-name">${products[i].name}</p>
-                        <div class="add-success hidden-element">
-                            <img class="check-icon" src="images/icons/check.png">
-                            <p class="add-success-p">加入購物車</p>
-                        </div>
-                        <div class="product-price-row">
-                            <div class="product-price">
-                                <p class="discount-price">$${products[i].discountPrice}</p>
-                                <p class="origin-price">$${products[i].originPrice}</p>
-                            </div>
-                            <img class="add-to-cart" src="images/icons/cart.png">
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+    <div class="index-cart">
+    <div class="index-cart-1">
+        <img src="${products[i].img}">
+        <p class="index-cart-name">${products[i].name}</p>
+        <br>
+        <p class="index-cart-price">$${products[i].discountPrice}</p>
+        <button class="index-cart-0"><img src="./img/Shopping Cart.png" alt=""></button>
+    </div>
+</div>
     `;
 }
 

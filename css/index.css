@@ -20,22 +20,29 @@ body {
 
 .index-logo {
     margin: 30px;
-    
+    display: flex; /* 使用 Flexbox 來水平置中 */
+    align-items: center; /* 垂直置中 */    
 }
 
 .index-user {
     margin: 30px;
+    display: flex; /* 使用 Flexbox 來水平置中 */
+    align-items: center; /* 垂直置中 */
 }
 
 
 .index-search {
     display: inline-flex;
+    display: flex; /* 使用 Flexbox 來水平置中 */
+    align-items: center; /* 垂直置中 */
 
 }
 
 #indexsearch {
     background-color: transparent;
     border: 0;
+    display: flex; /* 使用 Flexbox 來水平置中 */
+    align-items: center; /* 垂直置中 */
     
 }
 
@@ -44,11 +51,12 @@ body {
 }
 
 .index-text{
+    display: flex; /* 使用 Flexbox 來水平置中 */
+    align-items: center; /* 垂直置中 */
     background-color: transparent;
-    border: 0;
-    /* display: none; */
+    border: 1px solid black;
     position: relative;
-    background: #2c3e50;
+    background: #ffffff;
     height: 20px;
     border-radius: 40px;
     padding: 10px;
